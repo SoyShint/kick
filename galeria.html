@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Unificada - Diffrent</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS global -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="mobile-menu-button">Inicio</div>
+            <div class="nav-links">
+         <a href="index.html#home">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="videos.html">Videos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="envivo.html">En Vivo</a>
+        <a href="top.html">Comunidad</a>    
+        <a href="TmafiaStream.html">Mafia Stream</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Cerrar el menú al hacer clic en un enlace
+            const links = document.querySelectorAll('.nav-links a');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
+    <!-- Botón de volver -->
+    <div class="back-button">
+        <a href="javascript:history.back()">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!-- Galería 1 -->
+    <div class="gallery-container">
+        <h1 class="gallery-title">Galería</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff7.png" alt="Evento Diffrent">
+                <div class="info">
+                    <h3>PRIMER EXTENSIBLE EN KICK</h3>
+                    <p>La rompimos</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff5.png" alt="Otro evento">
+                <div class="info">
+                    <h3>GANÉ LOS SQUIDFRENCH</h3>
+                    <p>Campeón de los squidfrench de Shadoune</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff1.png" alt="Otro evento">
+                <div class="info">
+                    <h3>VIAJE A ARGENTINA</h3>
+                    <p>Conocemos al team mafia en IRL</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff4.png" alt="Otro evento">
+                <div class="info">
+                    <h3>JUGAMOS EL CTM DEL RICH</h3>
+                    <p>Jugamos con los pibes</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff3.png" alt="Otro evento">
+                <div class="info">
+                    <h3>ONE BLOCK CON PIRU</h3>
+                    <p>Jugamos un oneblock con piru</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff2.png" alt="Otro evento">
+                <div class="info">
+                    <h3>SQUIDGAMES DE BOBYCRAFT</h3>
+                    <p>Jugamos squids de bobycraft</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/diff6.png" alt="Otro evento">
+                <div class="info">
+                    <h3>JUEGO IT TAKES TWO CON NIA</h3>
+                    <p>Jugamos con nia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería 2 -->
+    <div class="gallery-container">
+        <h1 class="gallery-title">Fotos del team mafia</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia6.png" alt="Evento Diffrent">
+                <div class="info">
+                    <h3>La ultima cena</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia2.png" alt="Otro evento">
+                <div class="info">
+                    <h3>La ultima cena IRL</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia.png" alt="Otro evento">
+                <div class="info">
+                    <h3>Foto en el baño con los pibes</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia3.png" alt="Otro evento">
+                <div class="info">
+                    <h3>Dedsafio dia 13</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia4.png" alt="Otro evento">
+                <div class="info">
+                    <h3>La ultima foto del Team Mafia en dedsafio</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/mafia5.png" alt="Otro evento">
+                <div class="info">
+                    <h3>Dedsafio día 27</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería 3 -->
+    <div class="gallery-container">
+        <h1 class="gallery-title">Eventos para el clan_200</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/evento1.png" alt="Evento Diffrent">
+                <div class="info">
+                    <h3>Escondite navideño</h3>
+                    <p>Evento para pasar el rato con la comunidad en navidad</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/evento2.png" alt="Deletreo">
+                <div class="info">
+                    <h3>Deletreo</h3>
+                    <p>Labadora</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/evento3.png" alt="Concurso de dibujo">
+                <div class="info">
+                    <h3>Concurso de dibujo</h3>
+                    <p>Para los artistas de la comunidad</p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/clan.png" alt="Lista del Clan">
+                <div class="info">
+                    <h3>Lista del Clan_200 2025 Kick</h3>
+                    <p>Lista de los integrantes activos de la comunidad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <p class="modal-description" id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalDesc = document.getElementById('modalDescription');
+
+        function openModal(element) {
+            modal.style.display = "flex";
+            modalImg.src = element.querySelector('img').src;
+            modalDesc.textContent = element.querySelector('.info h3').textContent;
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Diffrent. hecho con ❤️ por <a href="#">SoyShint</a>.</p>
+    </footer>
+</body>
+</html>

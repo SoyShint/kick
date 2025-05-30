@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Diffrent</title>
+     <link rel="stylesheet" href="style.css">
+     <body id="about">
+</head>
+<body>
+    <nav class="navbar" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #000; color: white; z-index: 1000; padding: 10px 20px;">
+        <div class="nav-content">
+            <div class="mobile-menu-button">Inicio</div>
+            <div class="nav-links">
+        <a href="index.html#home">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="videos.html">Videos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="envivo.html">En Vivo</a>
+        <a href="top.html">Comunidad</a>    
+        <a href="TmafiaStream.html">Mafia Stream</a>
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+    .nav-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .mobile-menu-button {
+        display: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            padding: 10px 0;
+        }
+    
+        .nav-links.active {
+            display: flex;
+        }
+    
+        .nav-links a {
+            padding: 10px 20px;
+        }
+    
+        .mobile-menu-button {
+            display: block;
+        }
+    }
+    </style>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const navLinks = document.querySelector('.nav-links');
+    
+        mobileMenuButton.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    
+        // Cerrar el menú al hacer clic en un enlace
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+    });
+    </script>
+    
+    <style>
+    .nav-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .mobile-menu-button {
+        display: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            padding: 10px 0;
+        }
+    
+        .nav-links.active {
+            display: flex;
+        }
+    
+        .nav-links a {
+            padding: 10px 20px;
+        }
+    
+        .mobile-menu-button {
+            display: block;
+        }
+    }
+    </style>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const navLinks = document.querySelector('.nav-links');
+    
+        mobileMenuButton.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    
+        // Cerrar el menú al hacer clic en un enlace
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+    });
+    </script>
+
+    <!-- Sección Sobre Diffrent -->
+    <section id="about" class="section">
+        <h2 class="section-title">Sobre Diffrent</h2>
+        <div class="about-container">
+            <!-- Imagen de Diffrent -->
+            <div class="about-image">
+                <img src="images/diffrent.png" alt="Diffrent">
+            </div>
+            <!-- Texto descriptivo -->
+            <div class="about-text">
+                <p>
+                    <strong>Diffrent</strong>, también conocido como el jugador 200, es un streamer y creador de contenido 
+                    <strong>uruguayo</strong> que ha ganado notoriedad en el ámbito del entretenimiento digital. Se destacó por su 
+                    participación en <strong>Squid Craft Games 2</strong>, un evento de Minecraft inspirado en la serie 
+                    <em>El juego del calamar</em>, organizado por <strong>AuronPlay, Rubius y Komanche</strong>. A pesar de ser un streamer 
+                    relativamente pequeño en comparación con otros participantes, su selección como el jugador número 200 marcó un punto 
+                    de inflexión en su carrera.
+                </p>
+                <p>
+                    Diffrent es conocido por su humildad y cercanía con su comunidad, a la que llama <em>"El clan de los 200"</em> o 
+                    simplemente <em>"200"</em>, en referencia a su número de participante en Squid Craft Games 2. Su enfoque en la interacción 
+                    con sus seguidores es distintivo, ya que fomenta un ambiente de confianza y camaradería, donde los miembros pueden 
+                    interactuar con él y entre ellos con apodos y bromas, siempre dentro de los límites del respeto.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botón Volver</title>
+        
+        <!-- Enlace a Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <style>
+            /* Estilo del contenedor del botón */
+            .back-button {
+                position: fixed;
+                top: 20px; /* Distancia desde la parte superior */
+                left: 20px; /* Distancia desde la izquierda */
+                z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            }
+    
+            /* Estilo del enlace */
+            .back-button a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px; /* Tamaño del botón */
+                height: 50px;
+                background-color: #000; /* Color de fondo */
+                color: white; /* Color del ícono */
+                text-decoration: none;
+                border-radius: 50%; /* Hace el botón circular */
+                font-size: 24px; /* Tamaño del ícono */
+                transition: background-color 0.3s ease;
+            }
+    
+            /* Efecto hover */
+            .back-button a:hover {
+                background-color: #333; /* Cambia el color al pasar el mouse */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Botón de volver -->
+        <div class="back-button">
+            <a href="javascript:history.back()">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Statistics Widget</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Chat Statistics</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="messagesChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="usersChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos de ejemplo para los gráficos
+        const messagesData = {
+            labels: ['May 19', 'May 20', 'May 21', 'May 22', 'May 23', 'May 24'],
+            datasets: [{
+                label: 'Messages',
+                data: [154, 200, 180, 220, 190, 210],
+                backgroundColor: 'rgba(83, 252, 24, 0.2)',
+                borderColor: 'rgba(83, 252, 24, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        const usersData = {
+            labels: ['ashtreed', 'soyshint', 'user3', 'user4', 'user5'],
+            datasets: [{
+                label: 'Messages by User',
+                data: [4133, 31867, 2500, 3000, 2000],
+                backgroundColor: [
+                    'rgba(145, 204, 117, 0.2)',
+                    'rgba(117, 192, 222, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(145, 204, 117, 1)',
+                    'rgba(117, 192, 222, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // Crear los gráficos
+        const messagesChart = new Chart(document.getElementById('messagesChart'), {
+            type: 'bar',
+            data: messagesData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const usersChart = new Chart(document.getElementById('usersChart'), {
+            type: 'bar',
+            data: usersData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
