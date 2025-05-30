@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+  publish = "public"
+
+[build.environment]
+  # Variables de entorno se configuran en el panel de Netlify
+  # KICK_CLIENT_ID =1JVARVDGZZ024D2KSBJV5KBDQ
+  # KICK_CLIENT_SECRET = "tu-client-secret"
