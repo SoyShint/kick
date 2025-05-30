@@ -611,3 +611,27 @@ body#top footer {
   background-color: #4752c4;
   transform: scale(1.05);
 }
+.kick-login-container {
+  margin-top: 20px;
+}
+
+.kick-login-btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(45deg, #40ff40, #00cc00); /* Verde estilo Kick */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  gap: 10px;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+}
+
+.kick-login-btn:hover {
+  background: linear-gradient(45deg, #33cc33, #009900);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 255, 0, 0.3);
+}
